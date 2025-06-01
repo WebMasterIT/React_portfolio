@@ -1,0 +1,69 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.app {
+	margin: auto;
+	width: 500px;
+}
+
+.question,
+.result {
+	background: white;
+	padding: 40px;
+	border-radius: 20px;
+	color: black;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+}
+
+.option.correct {
+	background-color: #16a34a;
+}
+
+.option.incorrect {
+	background-color: #dc2626;
+}
+
+button.option:disabled {
+	cursor: default;
+	opacity: 0.8;
+}
+
+button {
+	margin-top: 10px;
+	padding: 1rem;
+	font-size: 1rem;
+	background: #4f46e5;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #3730a3;
+}
+
+.history {
+	margin: 1rem 0;
+	background: #3730a3;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.history ul {
+	list-style: none;
+	padding: 0;
+}
+
+.history li {
+	margin: 0.3rem 0;
+}
